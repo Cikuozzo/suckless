@@ -1,2 +1,2 @@
 # Suckless
-my fork of the suckless software
+my fork of the suckless softwares
