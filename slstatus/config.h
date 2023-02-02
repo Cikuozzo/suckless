@@ -9,20 +9,6 @@ static const char unknown_str[] = "n/a";
 /* maximum output string length */
 #define MAXLEN 2048
 
-// static const Block blocks[] = {
-//    /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
-//    {"^d^ ^b#d65d0e^^c#1d2021^  ^b#fe8019^ ", "xbps-install -unM | wc -l",                                     21600,   10},
-//    {"^d^ ^b#b16286^^c#1d2021^  ^b#d3869b^ ", "block-keymap ",                                                 0,       12},
-//    {"^d^ ^b#98971a^^c#1d2021^  ^b#b8bb26^ ", "block-cpu perc",                                                5,       0},
-//    {"^d^ ^b#458588^^c#1d2021^  ^b#83a598^ ", "block-temperature /sys/class/thermal/thermal_zone0/temp",       5,       0},
-//    {"^d^ ^b#689d6a^^c#1d2021^  ^b#8ec07c^ ", "block-ram used",                                                10,      0},
-//    {"^d^ ^b#d79921^^c#1d2021^  ^b#fabd2f^ ", "block-battery perc BAT0",                                       60,      0},
-//   {"^d^ ^b#cc241d^^c#1d2021^  ^b#fb4934^ ", "block-datetime \"%H:%M\"",                                      60,      0},
-//    {"^d^ ", "",                                        0,       0},
-
-//};
-
-
 /*
  * function            description                     argument (example)
  *
@@ -75,6 +61,15 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
+
+//COLORS
+// RED:      ^b#fb4934^
+// YELLOW:   ^b#d79921^
+// GREEN:    ^b#b8bb26^
+// BLUE:     ^b#83a598^
+
+
+
 static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%F %T" },
