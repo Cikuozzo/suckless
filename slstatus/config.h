@@ -68,15 +68,13 @@ static const char unknown_str[] = "n/a";
 // GREEN:    ^b#b8bb26^
 // BLUE:     ^b#83a598^
 
-
-
 static const struct arg args[] = {
-	/* function format          argument */
-	//{ datetime, "%s",           "%F %T" },
-	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-        //{ netspeed_rx, "%sB/s  ", "enp0s3" },
-	{ run_command,"^c#1d2021^ ^b#83a598^" "[VOL: %4s]", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ cpu_perc, "^c#1d2021^ ^b#b8bb26^" "[CPU: %s%%]", NULL },
-	{ ram_perc, "^c#1d2021^ ^b#d79921^" "[RAM:%s%]", NULL },
-	{ datetime, "^c#1d2021^ ^b#fb4934^" "[%s]",           "%r" },
+  /* function format          argument */
+  //{ datetime, "%s",           "%F %T" },
+  //{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
+  //{ netspeed_rx, "%sB/s  ", "enp0s3" },
+  { run_command,"^c#1d2021^ ^b#83a598^" "[VOL: %4s]", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+  { cpu_perc, "^c#1d2021^ ^b#b8bb26^" "[CPU: %s%%]", NULL },
+  { ram_perc, "^c#1d2021^ ^b#d79921^" "[RAM:%s%]", NULL },
+  { datetime, "^c#1d2021^ ^b#fb4934^" "[%s]",           "%r" },
 };
